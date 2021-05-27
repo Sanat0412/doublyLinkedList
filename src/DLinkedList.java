@@ -15,12 +15,14 @@ public class DLinkedList {
         tail.next=newNode;
         tail=newNode;
     }
-//    public void print(){
-//        if (head!=null){
-//        Node temp=head;
-//        while (temp!=null){
-//            System.out.println(temp.data);
-//        }
-//        }
-//    }
+    public void print(){
+        if (head!=null){
+        Node temp=head;
+        while (temp!=null){
+            System.out.println(temp.data + "-> <-");
+            temp=temp.next;
+        }
+            System.out.println();
+        }
+    }
 }
